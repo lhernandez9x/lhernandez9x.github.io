@@ -1,0 +1,201 @@
+/* Page Style */
+
+body {
+  color: #fff;
+  background-color: #2c3e50;
+  font-family: 'Droid Serif', serif;
+}
+
+/* Header Style */
+
+header {
+  margin-bottom: 1%;
+}
+
+.navbar {
+  padding-top: 2%;
+  margin: 0;
+}
+
+.logo {
+  padding-top: 1%;
+}
+
+@media only screen and (max-width:640px) {
+
+  .logo {
+    max-width:75px;
+  }
+
+}
+
+.title-name {
+  text-align: right;
+}
+
+.title-name h1 {
+  margin: 0;
+}
+
+.header-img {
+  width: 100%;
+}
+
+/* Section */
+
+section {
+  padding: 1% 0;
+  background-color: #c0392b;
+}
+
+.section-title {
+  padding-top: 2%;
+}
+
+/* Project Section */
+
+.project img {
+  border: solid 10px #fff;
+  transition-property: border-top, border-right, border-bottom, border-left;
+  transition-delay: 100ms, 200ms, 300ms, 400ms;
+  transition-duration: 100ms;
+  transition-timing-function: linear;
+}
+
+.project img:hover {
+  border-top: solid 10px #2980b9;
+  border-right: solid 10px #2980b9;
+  border-bottom: solid 10px #2980b9;
+  border-left: solid 10px #2980b9;
+}
+
+.project-info {
+  padding-top: 5%;
+  text-align: center;
+}
+
+.project-info h3 {
+  font-weight: 300;
+  font-variant: small-caps;
+}
+
+.project-info p {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+/* Responsive Project Section */
+
+@media only screen and (max-width:768px) {
+
+  .project img {
+    border: solid 5px #fff;
+    transition-property: border-top, border-right, border-bottom, border-left;
+    transition-delay: 100ms, 200ms, 300ms, 400ms;
+    transition-duration: 100ms;
+    transition-timing-function: linear;
+  }
+
+  .project img:hover {
+    border-top: solid 5px #2980b9;
+    border-right: solid 5px #2980b9;
+    border-bottom: solid 5px #2980b9;
+    border-left: solid 5px #2980b9;
+  }
+
+  .project-info h3 {
+    font-weight: 300;
+    font-variant: small-caps;
+  }
+
+}
+
+@media only screen and (max-width:640px) {
+
+  .project img {
+    border: solid 2px #fff;
+    transition-property: border-top, border-right, border-bottom, border-left;
+    transition-delay: 100ms, 200ms, 300ms, 400ms;
+    transition-duration: 100ms;
+    transition-timing-function: linear;
+  }
+
+  .project img:hover {
+    border-top: solid 2px #2980b9;
+    border-right: solid 2px #2980b9;
+    border-bottom: solid 2px #2980b9;
+    border-left: solid 2px #2980b9;
+  }
+
+  .project-info h3 {
+    font-weight: 300;
+    font-variant: small-caps;
+  }
+
+}
+
+/* Buttons */
+
+.link-button {
+  color: #fff;
+  border: solid 2px #fff;
+  background-color: #c0392b;
+  padding: 2% 4%;
+  transition-property: background-color, color;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.link-button:hover {
+  color: #c0392b;
+  background-color: #fff;
+}
+
+@media only screen and (max-width:640px) {
+
+  .link-button {
+    margin-bottom: 5%;
+  }
+
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+h2 {
+  font-size: 2.0em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+/* Media */
+
+img {
+  max-width: 100%;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
