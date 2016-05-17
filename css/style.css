@@ -121,6 +121,9 @@ section {
     padding-bottom: 5%;
 }
 
+.project-summary{
+    height:75px;
+}
 
 /* Responsive Project Section */
 
