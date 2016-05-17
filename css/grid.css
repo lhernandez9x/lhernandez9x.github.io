@@ -96,7 +96,11 @@
 ===================================================================================== */
 
 @media only screen and (max-width:640px) {
-
+    .container,
+    .row{
+        width:100%;
+        margin:0;
+    }
   .container .g1,
   .container .g2,
   .container .g3,
@@ -109,7 +113,7 @@
   .container .g10,
   .container .g11,
   .container .g12 {
-    width:100%;
+    width:90%;
   }
-
 }
+
