@@ -6,22 +6,24 @@
     <!-- Basic Page Needs
 ================================================== -->
     <meta charset="utf-8">
-    <title>Lorenzo Hernandez | Web Developer, UX/UI Designer in El Paso, TX</title>
+    <title>Lorenzo Hernandez | UX and Frontend Web Developer in El Paso, TX</title>
+    <meta name="description" content="">
+  <meta name="author" content="">
 
     <!-- Mobile Specific Metas
 ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS
 ================================================== -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- Fonts
 ================================================== -->
     <link href='https://fonts.googleapis.com/css?family=Oswald:700,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600' rel='stylesheet' type='text/css'>
 
     <!-- Scripts
 ================================================== -->
@@ -30,69 +32,62 @@
 </head>
 
 <body>
-    <header>
+    <header id="main">
+        <nav class="menu">
+            <i class="fa fa-bars fa-3x menu-icon"></i>
+            <!-- <ul class="menu-list">
+                <a href="#"><li class="menu-item"> Menu Item</li></a>
+                <a href="#"><li class="menu-item"> Menu Item</li></a>
+                <a href="#"><li class="menu-item"> Menu Item</li></a>
+                <a href="#"><li class="menu-item"> Menu Item</li></a>
+                <a href="#"><li class="menu-item"> Menu Item</li></a>
+            </ul> -->
+        </nav>
         <img class="logo" src="images/logo.png" alt="Logo for site">
-        <div class="headerTitle">
-            <h1>Web Developer &bull; UX Practicioner</h1>
-            <h2>Building Awesome Web Experiences</h2>
+        <div class="headerTitle container">
+            <h1 class="two-thirds column">Web Developer &bull; UX Practicioner</h1>
+            <h4 class="one-third column">Hello, I'm Lorenzo. I am a Frontend Web Developer from El Paso, TX. I enjoy creating awesome experiences through web sites or web apps. If you are a business looking for help or if you are an employer looking to hire click below to get in touch. </h4>
         </div>
-        <div class="socialNavbar">
-            <a href="http://linkedin.com/in/larryhernandez" target="_blank"><img src="images/linkedin-icon.png" width="90px"></a>
-            <a href="http://twitter.com/lhernandez9x" target="_blank"><img src="images/twitter-icon.png" width="90px"></a>
-            <a href="http://github.com/lhernandez9x" target="_blank"><img src="images/github.png" width="90px"></a>
-            <a href="http://facebook.com/lhernandez9x" target="_blank"><img src="images/facebook-icon.png" width="90px"></a>
-        </div>
+        <div class="container">
+                <a href="contact.html">
+                    <button class="typeform-button">Hire Me</button>
+                </a>
+            </div>
     </header>
-    <section>
+    
+    <!--About Section-->
+    <section id="about">
         <div class="container">
-            <div class=" section-title row">
-                <div class="g4">
-                    <h2>Featured Work</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="g4">
-                    <div class="project">
-                        <img src="images/project1.png" alt="Project 1 Thumbnail">
-                    </div>
-                    <div class="project-info">
-                        <h3>Online Resume</h3>
-                        <p class= "project-summary">Using jQuery, developed an interactive resume application that reads all data from a JSON file and then dynamically modifies the DOM to display the information. Further customized the project by personalizing the design using CSS.
-                        </p>
-                        <a class="link-button" href="http://lhernandez9x.github.io/frontend-nanodegree-resume/">Check It Out</a>
-                    </div>
-                </div>
-                <div class="g4">
-                    <div class="project">
-                        <img src="images/project2.png" alt="Project 2 Thumbnail">
-                    </div>
-                    <div class="project-info">
-                        <h3>Classic Arcade Game Remake</h3>
-                        <p class= "project-summary">An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.
-                        </p>
-                        <a class="link-button" href="http://lhernandez9x.github.io/frontend-nanodegree-arcade-game/">Check It Out</a>
-                    </div>
-                </div>
-                <div class="g4">
-                    <div class="project">
-                        <img src="images/project1.png" alt="Project 3 Thumbnail">
-                    </div>
-                    <div class="project-info">
-                        <h3>Website Optimization</h3>
-                        <p class= "project-summary">Optimize a provided website with a number of optimization- and performance-related issues so that it achieves a target PageSpeed score of 90 and runs at 60 frames per second.
-                        </p>
-                        <a class="link-button" href="#">Check It Out</a>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="copyright">
-                <p>Copyright &copy; 2016 | Lorenzo Hernandez</p>
-            </div>
+            <h4>My story...</h4>
+            <p>I recently made a change of careers and I am loving it. I have always been interested and attracted to web development and unfotunately I let my dreams fly by. After I was laid off from my last gig, I decided to make a change for my family and myself.</p>
+            
+            <h4>What now ...</h4>
+            <p>Since then I have been working on my skills in: <em>html, css, jquery, javascript,</em> and some <em>javascript libraries:</em> like <em>knockout, backbone</em> and soon <em>angular, react</em> and any others I can learn. I enrolled in <a class="inline-link" href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001">Udacity's Frontend Web Developer Nanodegre</a> in March and I have a few <a class="inline-link" href="#projects">projects</a> under my belt. They range from this site, to a full single-page web app.</p>
+            
+            <h5>Want to hire me?</h5> 
+            <p>I am available for contract work or full-time employment. Click <a class="inline-link" href="contact.html">here</a> to get in contact with me. </p>
         </div>
-    </footer>
+    </section>
+    
+    <!--Portfolio Section-->
+    <section id="portfolio">
+        <div class="container">
+            <a class="project-link" href="http://lhernandez9x.github.io/frontend-nanodegree-resume"><img src="images/project-resume.jpg" alt ="Image for Resume Project"><h3>Interactive Resume</h3><h5>HTML CSS JavaScript jQuery</h5><p>Using jQuery, developed an interactive resume application that reads all data from a JSON file and then dynamically modifies the DOM to display the information. Further customized the project by personalizing the design using CSS.</p></a>
+            
+            <a class="project-link" href="http://lhernandez9x.github.io/frontend-nanodegree-arcade-game"><img src="images/project-game.jpg" alt ="Image for Frogger Clone Game Project"><h3>Frogger Clone Game</h3><h5>JavaScript Object-Oriented Programming HTML5 Canvas</h5><p>An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.</p></a>
+            
+            <a class="project-link" href="http://lhernandez9x.github.io/frontend-nanodegree-mobile-portfolio"><img src="images/project-optimization.jpg" alt ="Image for Web Optimization Project"><h3>Web Optimization</h3><h5>HTML CSS Chrome Developer Tools critical rendering path 60FPS rendering</h5><p>Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90.</p></a>
+            
+            <a class="project-link" href="http://lhernandez9x.github.io/project-neighborhood-map"><img src="images/project-map.jpg" alt ="Image for Neighborhood Map Project"><h3>Neighborhood Map Application</h3><h5>HTML CSS JavaScript jQuery</h5><p>Developed a single-page application featuring a map of downtown El Paso’s historic locations. Added additional functionality, including: map markers, a search function to filter locations, and a listview to support simple browsing of all locations. Added third-party APIs that provide additional information about each of these locations.</p></a>
+            
+        </div>
+    </section>
+    
+    <!--Contact Section-->
+    <section id="contact">
+    </section>
+    
+    <!--Script Tags-->
     <script src="js/main.js"></script>
 </body>
 
