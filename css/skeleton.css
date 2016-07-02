@@ -278,6 +278,7 @@ section {
   color: #ecf0f1; }
 
 .project-link img {
+  padding-bottom: 10%;
   width: 100%; }
 
 .project-link h3,
