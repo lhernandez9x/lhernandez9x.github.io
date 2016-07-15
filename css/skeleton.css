@@ -209,19 +209,19 @@ html {
   font-size: 62.5%; }
 
 body {
-  background: #7f8c8d;
+  background: #ecf0f1;
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
   font-family: "Titillium Web", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #ecf0f1;
-  overflow-x: hidden;
-  z-index: 1; }
+  color: #7f8c8d;
+  overflow-x: hidden; }
 
 /* Header Styles*/
 header {
   position: relative;
   background: #2980b9;
+  color: #ecf0f1;
   height: 100vh;
   width: 100%;
   text-align: center; }
@@ -258,7 +258,7 @@ nav {
 
 .headerTitle h4 {
   text-align: justify;
-  padding: 5% 0 10% 0; }
+  padding: 10% 5%; }
 
 .typeform-button {
   background: none;
@@ -271,11 +271,29 @@ nav {
   background: #ecf0f1;
   color: #2980b9; }
 
+@media (min-width: 1000px) {
+  .headerTitle h1 {
+    padding: 10% 0;
+    border-right: 2px solid #ecf0f1;
+    border-bottom: none; }
+  .headerTitle h4 {
+    padding: 0; } }
+
 section {
   padding-top: 10%; }
 
+.section-title {
+  padding-bottom: 2%;
+  border-bottom: solid 2px #7f8c8d; }
+
+#about img {
+  width: 100%; }
+
+#projects {
+  background: #bdc3c7; }
+
 .project-link {
-  color: #ecf0f1; }
+  color: #7f8c8d; }
 
 .project-link img {
   padding-bottom: 10%;
@@ -284,6 +302,12 @@ section {
 .project-link h3,
 .project-link h5 {
   text-align: center; }
+
+.project-container {
+  padding: 15% 0; }
+
+.project-tech {
+  color: #2980b9; }
 
 a {
   color: #e74c3c;
@@ -295,7 +319,7 @@ a {
   border-bottom: 1px dotted #e74c3c;
   padding: 0 10px; }
   .inline-link:hover {
-    color: #ecf0f1;
+    color: #7f8c8d;
     background: #e74c3c;
     border: none; }
 
@@ -303,7 +327,7 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #bdc3c7; }
+  border-top: 1px solid #ecf0f1; }
 
 .u-full-width {
   width: 100%;
@@ -373,9 +397,8 @@ p {
   margin-top: 0; }
 
 em {
-  color: #e74c3c;
-  text-shadow: 0 1px 5px #121212;
-  padding: 0 5px; }
+  color: #2980b9;
+  padding: 0 7px; }
 
 /* Modules */
 /*
@@ -390,7 +413,7 @@ em {
 .container {
   position: relative;
   width: 100%;
-  max-width: 1024px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -509,8 +532,8 @@ code {
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #cfd3d6;
-  border: 1px solid #bdc3c7;
+  background: #909c9c;
+  border: 1px solid #ecf0f1;
   border-radius: 4px; }
 
 pre > code {

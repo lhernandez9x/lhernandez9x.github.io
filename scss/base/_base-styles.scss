@@ -3,14 +3,13 @@ html {
 }
 
 body {
-    background: $dark-grey;
+    background: $light;
     font-size: 1.5em; // currently ems cause chrome bug misinterpreting rems on body element
     line-height: 1.6;
     font-weight: 400;
     font-family: $body-font-family;
     color: $font-color;
-    overflow-x: hidden;
-    z-index: 1;
+    overflow-x:hidden;
 }
 
 
@@ -19,6 +18,7 @@ body {
 header {
     position: relative;
     background: $primary-color;
+    color:$light;
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -33,7 +33,7 @@ nav{
     display: block;
     width:100vw;
     transform: translateX(120vw);
-    background: $dark-grey;
+    background: $dark;
 }
 .menu-open{
     transform: translateX(-40vw);
@@ -58,7 +58,7 @@ nav{
 
 .headerTitle h4 {
     text-align: justify;
-    padding: 5% 0 10% 0;
+    padding: 10% 5%;
 }
 
 .typeform-button {
@@ -66,12 +66,25 @@ nav{
     font-size: 1.25em;
     padding: 1% 5%;
     border: 2px solid $border-color;
-    color: $font-color;
+    color: $light;
 }
 
 .typeform-button:hover {
-    background: $font-color;
+    background: $light;
     color: $primary-color;
+}
+
+@media (#{$bp-larger-than-desktop}){
+    .headerTitle{
+    }
+    .headerTitle h1{
+        padding:10% 0;
+        border-right: 2px solid $border-color;
+        border-bottom: none;
+    }
+    .headerTitle h4{
+        padding: 0;
+    }
 }
 
 //Section Styles
@@ -80,10 +93,25 @@ nav{
 section{
     padding-top:10%;
 }
+.section-title{
+    padding-bottom: 2%;
+    border-bottom: solid 2px $font-color;
+}
+
+//About Styles
+//--------------------------------------------------
+
+#about img{
+    width: 100%;
+}
 
 //Project Styles
 //--------------------------------------------------
 
+
+#projects{
+    background: #bdc3c7;
+}
 .project-link{
     color:$font-color;
 }
@@ -95,6 +123,14 @@ section{
 .project-link h3,
 .project-link h5{
     text-align: center;
+}
+
+.project-container{
+    padding: 15% 0;
+}
+
+.project-tech{
+    color: $primary-color;
 }
 
 // Links
@@ -123,5 +159,5 @@ hr {
     margin-top: 3rem;
     margin-bottom: 3.5rem;
     border-width: 0;
-    border-top: 1px solid $light-grey;
+    border-top: 1px solid $light;
 }
