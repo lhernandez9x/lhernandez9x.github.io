@@ -9,19 +9,27 @@ body {
     font-weight: 400;
     font-family: $body-font-family;
     color: $font-color;
-    overflow-x:hidden;
 }
 
 
-/* Header Styles*/
+// Header Styles
+//------------------------------------------------
 
 header {
     position: relative;
-    background: $primary-color;
+    background: url(../images/bg-sm.jpg) no-repeat;
+    background-size: cover;
     color:$light;
     height: 100vh;
     width: 100%;
     text-align: center;
+}
+
+@media (#{$bp-larger-than-desktop}){
+    header{
+        background: url(../images/bg-lg.jpg) no-repeat;
+        background-size: cover;
+    }
 }
 
 nav{
@@ -46,14 +54,13 @@ nav{
 
 .headerTitle {
     font-family: $header-font-family;
-    text-shadow: 2px 2px 5px #7f8c8d;
     margin:0;
 }
 
 .headerTitle h1 {
     padding-bottom: 5%;
     border-right: none;
-    border-bottom: 5px solid #fff;
+    border-bottom: 5px solid $light;
 }
 
 .headerTitle h4 {
@@ -64,20 +71,14 @@ nav{
 
 .typeform-button {
     background: none;
+    font-variant: caps;
     font-size: 1.25em;
-    padding: 1% 5%;
+    padding: 1% 20%;
     border: 2px solid $border-color;
     color: $light;
 }
 
-.typeform-button:hover {
-    background: $light;
-    color: $primary-color;
-}
-
 @media (#{$bp-larger-than-desktop}){
-    .headerTitle{
-    }
     .headerTitle h1{
         padding:10% 0;
         border-right: 2px solid $border-color;
@@ -86,6 +87,10 @@ nav{
     .headerTitle h4{
         padding: 0;
     }
+    .typeform-button:hover {
+    background: $link-color;
+    color: $light;
+}
 }
 
 //Section Styles
@@ -99,9 +104,63 @@ section{
     border-bottom: solid 2px $font-color;
 }
 
-//About Styles
+@media (#{$bp-larger-than-desktop}){
+    section{
+        padding-top: 2%;
+    }
+}
+
+//Skills Styles
 //--------------------------------------------------
 
+#services{
+    background: $dark;
+    color: $light;
+    text-align: center;
+}
+
+.process-container{
+    padding: 10% 0;
+    margin: 5% 0;
+    background: lighten($dark, 3%);
+    text-align: center;
+    &:hover{
+        background:$link-color;
+        color:#bdc3c7;
+    }
+    h4{
+        margin-top:10%;
+    }
+    
+}
+
+.content-hidden{
+    display: none;
+}
+
+.fa-sitemap,
+.fa-rocket{
+    color:#2ecc71;
+    text-shadow: 0 0 5px $dark;
+}
+
+.fa-pencil-square-o,
+.fa-wrench{
+    color:#2980b9;
+    text-shadow: 0 0 5px $dark;
+}
+
+.fa-code,
+.fa-users{
+    color:#16a085;
+    text-shadow: 0 0 5px $dark;
+}
+
+//About Styles
+//--------------------------------------------------
+#about{
+    text-align: justify;
+}
 #about img{
     width: 100%;
 }
@@ -144,12 +203,12 @@ a {
     }
 }
 .inline-link{
-    border-bottom: 1px dotted $link-color;
     padding: 0 10px;
+    background: #2c3e50;
+    color:$light;
     &:hover{
-        color:$font-color;
-        background: $link-color;
-        border:none;
+        background: #34495e;
+        color:$light;
     }
 }
 

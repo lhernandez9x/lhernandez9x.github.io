@@ -22,19 +22,18 @@
 
     <!-- Fonts
 ================================================== -->
-    <link href='https://fonts.googleapis.com/css?family=Oswald:700,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto:300,400,700" rel="stylesheet">
 
     <!-- Scripts
 ================================================== -->
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 </head>
 
 <body>
     <header id="main">
         <nav class="menu">
-            <i class="fa fa-bars fa-3x menu-icon"></i>
+            <i class="fa fa-bars menu-icon"></i>
             <!-- <ul class="menu-list">
                 <a href="#"><li class="menu-item"> Menu Item</li></a>
                 <a href="#"><li class="menu-item"> Menu Item</li></a>
@@ -46,19 +45,63 @@
         <img class="logo" src="images/logo.png" alt="Logo for site">
         <div class="headerTitle container">
             <h1 class="two-thirds column">Web Developer &bull; UX Practicioner</h1>
-            <h4 class="one-third column">Hello, I'm Lorenzo. I am a Frontend Web Developer from El Paso, TX. I enjoy creating awesome experiences through web sites or web apps. If you are a business looking for help or if you are an employer looking to hire, click below to get in touch. </h4>
+            <h4 class="one-third column">Hello, I'm <a class="inline-link" href="http://linkedin.com//in/larryhernandez">Lorenzo</a>. I am a passionate Frontend Web Developer from El Paso, TX. I enjoy creating awesome web experiences. Click below to get in touch. </h4>
         </div>
         <div class="container">
             <a href="contact.html">
-                <button class="typeform-button">Hire Me</button>
+                <button class="typeform-button">HIRE ME</button>
             </a>
         </div>
     </header>
 
+    <!--Services Section-->
+    <section id="services">
+        <div class="container">
+            <div class="u-max-full-width">
+                <h3>Web developer with Design Skills</h3>
+                <div class="row">
+                    <div class="process-container one-third column">
+                        <i class="fa fa-sitemap fa-4x"></i>
+                        <h4>Plan</h4>
+                        <p class="content-hidden"> I start by planning your project, usually on Post-it notes. This allows me to structure your project perfectly.</p>
+                    </div>
+                    <div class="process-container one-third column">
+                        <i class="fa fa-pencil-square-o fa-4x"></i>
+                        <h4>Design</h4>
+                        <p class="content-hidden">Once I have the general site down, I sketch and wireframe your project. At this point you will get a rough draft of your projects structure.</p>
+                    </div>
+                    <div class="process-container one-third column">
+                        <i class="fa fa-code fa-4x"></i>
+                        <h4>Code</h4>
+                        <p class="content-hidden">At this stage the fun begins. This is where I shine. I write the code for your project. Everything I do is hand coded.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="process-container one-third column">
+                        <i class="fa fa-users fa-4x"></i>
+                        <h4>Test</h4>
+                        <p class="content-hidden">Once I finish coding your project, I test it with 5 random users. This allows me to make any changes to the interface to increase UX <em>(user experience)</em>.</p>
+                    </div>
+                    <div class="process-container one-third column">
+                        <i class="fa fa-wrench fa-4x"></i>
+                        <h4>Fine Tune</h4>
+                        <p class="content-hidden">After our testing phase, we then refine your project using the results of the test to make your project a great experience for your users.</p>
+                    </div>
+                    <div class="process-container one-third column">
+                        <i class="fa fa-rocket fa-4x"></i>
+                        <h4>Launch</h4>
+                        <p class="content-hidden">Finally, all the hard work we put in pays off. We launch your project and watch how your users enjoy using it.</p>
+                    </div>
+                </div>
+                <h4>Our relationship doesn't end at this point. We will support your project on any bugs we might have missed. If you would like to make changes or additions we can definitely help.</h4>
+            </div>
+        </div>
+    </section>
+
     <!--About Section-->
     <section id="about">
         <div class="container">
-            <div class="one-third column">
+            <div class=" one-third column">
                 <img src="images/fam-pic.png" alt="Image of Lorenzo's Family">
                 <p>This is who I really am,. what motivates me, and what keeps me going.</p>
             </div>
@@ -74,38 +117,36 @@
             </div>
         </div>
     </section>
-    <section id="services">
 
-    </section>
     <!--Portfolio Section-->
     <section id="projects">
         <div class="container">
             <h4 class="section-title">Look what I can do ...</h4>
             <div class="project-container">
                 <a class="project-link" href="http://lhernandez9x.github.io/frontend-nanodegree-resume"><img src="images/project-resume.jpg" alt="Image for Resume Project">
-                    <h3>Interactive Resume</h3>
-                    <h5 class="project-tech">HTML &bull; CSS &bull; JavaScript &bull; jQuery</h5>
+            Interactive Resum
+                    <h4 class="project-tech">HTML &bull; CSS &bull; JavaScript &bull; jQuery</h4>
                     <p>Using jQuery, developed an interactive resume application that reads all data from a JSON file and then dynamically modifies the DOM to display the information. Further customized the project by personalizing the design using CSS.</p>
                 </a>
             </div>
             <div class="project-container">
                 <a class="project-link" href="http://lhernandez9x.github.io/frontend-nanodegree-arcade-game"><img src="images/project-game.jpg" alt="Image for Frogger Clone Game Project">
-                    <h3>Frogger Clone Game</h3>
-                    <h5 class="project-tech">JavaScript Object-Oriented Programming &bull; HTML5 Canvas</h5>
+            Frogger Clone Gam
+                    <h4 class="project-tech">JavaScript Object-Oriented Programming &bull; HTML5 Canvas</h4>
                     <p>An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.</p>
                 </a>
             </div>
             <div class="project-container">
                 <a class="project-link" href="http://lhernandez9x.github.io/frontend-nanodegree-mobile-portfolio"><img src="images/project-optimization.jpg" alt="Image for Web Optimization Project">
-                    <h3>Web Optimization</h3>
-                    <h5 class="project-tech">HTML &bull; CSS &bull; Chrome Developer Tools &bull; Critical Rendering Path &bull; 60 fps Rendering</h5>
+            Web Optimizatio
+                    <h4 class="project-tech">HTML &bull; CSS &bull; Chrome Developer Tools &bull; Critical Rendering Path &bull; 60 fps Rendering</h4>
                     <p>Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90.</p>
                 </a>
             </div>
             <div class="project-container">
                 <a class="project-link" href="http://lhernandez9x.github.io/project-neighborhood-map"><img src="images/project-map.jpg" alt="Image for Neighborhood Map Project">
-                    <h3>Neighborhood Map Application</h3>
-                    <h5 class="project-tech">HTML &bull; CSS &bull; JavaScript &bull; jQuery &bull; Knockout.js &bull; Web APIs</h5>
+            Neighborhood Map Applicatio
+                    <h4 class="project-tech">HTML &bull; CSS &bull; JavaScript &bull; jQuery &bull; Knockout.js &bull; Web APIs</h4>
                     <p>Developed a single-page application featuring a map of downtown El Paso’s historic locations. Added additional functionality, including: map markers, a search function to filter locations, and a listview to support simple browsing of all locations. Added third-party APIs that provide additional information about each of these locations.</p>
                 </a>
             </div>
