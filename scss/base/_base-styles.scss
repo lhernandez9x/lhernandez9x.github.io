@@ -122,14 +122,19 @@ section{
 .process-container{
     padding: 10% 0;
     margin: 5% 0;
-    width:100%;
-    min-height:300px;
+    min-height:365px;
     background: lighten($dark, 3%);
     text-align: center;
     &:hover{
         background:$link-color;
         color:#bdc3c7;
     }
+    & button{
+    background:none;
+    color:$light;
+    border:none;
+    margin-top:10%;
+}
 }
 
 .title-content{
