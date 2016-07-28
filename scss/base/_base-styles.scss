@@ -125,16 +125,14 @@ section{
     min-height:365px;
     background: lighten($dark, 3%);
     text-align: center;
-    &:hover{
-        background:$link-color;
-        color:#bdc3c7;
-    }
+    transition:all 1000ms ease-in-out;
+
     & button{
     background:none;
     color:$light;
     border:none;
     margin-top:10%;
-}
+    }
 }
 
 .title-content{
