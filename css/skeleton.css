@@ -271,6 +271,15 @@ nav {
   border: 2px solid #ecf0f1;
   color: #ecf0f1; }
 
+.more-info {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  background: none;
+  color: #ecf0f1;
+  border: none;
+  margin-top: 10%; }
+
 @media (min-width: 1000px) {
   .headerTitle h1 {
     padding: 10% 0;
@@ -280,7 +289,10 @@ nav {
     padding: 0; }
   .typeform-button:hover {
     background: #e74c3c;
-    color: #ecf0f1; } }
+    color: #ecf0f1; }
+  .more-info {
+    top: 70vh;
+    left: 48vw; } }
 
 section {
   padding-top: 10%; }

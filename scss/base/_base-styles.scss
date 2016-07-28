@@ -78,6 +78,16 @@ nav{
     color: $light;
 }
 
+.more-info{
+    position:absolute;
+    top:80vh;
+    left:45vw;
+    background:none;
+    color:$light;
+    border:none;
+    margin-top:10%;
+    }
+
 @media (#{$bp-larger-than-desktop}){
     .headerTitle h1{
         padding:10% 0;
@@ -90,7 +100,11 @@ nav{
     .typeform-button:hover {
     background: $link-color;
     color: $light;
-}
+    }
+    .more-info{
+        top:70vh;
+        left:48vw;
+    }
 }
 
 //Section Styles
