@@ -30,7 +30,7 @@ var body = $('body'),
     moreButton = $('.more-info');
 
 moreButton.on('click', function(){
-    body.animate({scrollTop: '610vh'}, 1000);
+    body.animate({scrollTop: '600vh'}, 1000);
     return false;
 })
 
