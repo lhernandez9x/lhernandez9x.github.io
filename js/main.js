@@ -29,8 +29,10 @@ var processContainer = $('.process-container');
 var body = $('body'),
     moreButton = $('.more-info');
 
+    console.log(window.innerHeight)
+
 moreButton.on('click', function(){
-        body.animate({scrollTop: '603vh'}, 750);
+        body.animate({scrollTop: window.innerHeight}, 750);
 });
 
 
