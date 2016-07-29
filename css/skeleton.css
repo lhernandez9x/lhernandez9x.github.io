@@ -274,11 +274,13 @@ nav {
 .more-info {
   position: absolute;
   top: 80vh;
-  left: 43vw;
+  left: 46vw;
   background: none;
   color: #ecf0f1;
   border: none;
   margin-top: 10%; }
+  .more-info:hover {
+    color: inherit; }
 
 @media (min-width: 1000px) {
   .headerTitle h1 {
@@ -316,7 +318,7 @@ section {
   min-height: 365px;
   background: #879394;
   text-align: center;
-  transition: all 1000ms ease-in-out; }
+  transition: all 500ms ease-in-out; }
   .process-container button {
     background: none;
     color: #ecf0f1;
@@ -386,9 +388,10 @@ a {
 .inline-link {
   padding: 0 10px;
   background: #2c3e50;
-  color: #ecf0f1; }
+  color: #ecf0f1;
+  transition: all 200ms ease-in-out; }
   .inline-link:hover {
-    background: #34495e;
+    background: #507192;
     color: #ecf0f1; }
 
 hr {

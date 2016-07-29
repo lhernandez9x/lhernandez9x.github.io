@@ -81,11 +81,14 @@ nav{
 .more-info{
     position:absolute;
     top:80vh;
-    left:43vw;
+    left:46vw;
     background:none;
     color:$light;
     border:none;
     margin-top:10%;
+        &:hover{
+        color:inherit;
+        }
     }
 
 @media (#{$bp-larger-than-desktop}){
@@ -139,7 +142,7 @@ section{
     min-height:365px;
     background: lighten($dark, 3%);
     text-align: center;
-    transition:all 1000ms ease-in-out;
+    transition:all 500ms ease-in-out;
 
     & button{
     background:none;
@@ -234,8 +237,9 @@ a {
     padding: 0 10px;
     background: #2c3e50;
     color:$light;
+    transition: all 200ms ease-in-out;
     &:hover{
-        background: #34495e;
+        background: lighten(#2c3e50, 20%);
         color:$light;
     }
 }
