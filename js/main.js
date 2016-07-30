@@ -7,32 +7,38 @@ function isMobile () {
   }
 }
 
-var processContainer = $('.process-container');
-
-// Toggle class on click 
-    processContainer.on('click', function () {
-        if ($(this).attr('style') === undefined || $(this).attr('style') == 'transform: rotateY(0deg);'){
-            $(this).css('transform','rotateY(360deg)');
-        } else {
-            $(this).css('transform','rotateY(0deg)');
-        }
-        var titleContent = $(this).children('div .title-content'),
-            bodyContent = $(this).children('div .body-content');
-     
-        //delay toggle class 
-        setTimeout(function(){
-            titleContent.toggleClass('content-hidden');
-            bodyContent.toggleClass('content-hidden');
-        },300);
-  });
-
 var body = $('body'),
-    moreButton = $('.more-info');
-
-    console.log(window.innerHeight)
+    moreButton = $('.more-info'),
+    openButton = $('.open-button'),
+    closeButton = $('.close-button');
 
 moreButton.on('click', function(){
-        body.animate({scrollTop: window.innerHeight}, 750);
+    body.animate({scrollTop: window.innerHeight}, 750);
+});
+
+// Toggle class on click 
+openButton.on('click', function () {
+    var self = $(this),
+        buttonParent = self.parent(),
+        processContainer = buttonParent.parent();
+
+    processContainer.animate({'max-height': '400px'}, 750);
+
+    setTimeout(function(){
+        self.css('visibility', 'hidden');
+    },800);
+});
+
+closeButton.on('click', function () {
+    var self = $(this),
+        buttonParent = self.parent(),
+        processContainer = buttonParent.parent();
+
+    processContainer.animate({'max-height': '70px'}, 750);
+
+    setTimeout(function(){
+        $('.open-button').css('visibility', 'visible');
+    },1500);
 });
 
 

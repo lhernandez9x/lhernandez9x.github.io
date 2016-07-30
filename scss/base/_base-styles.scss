@@ -114,7 +114,7 @@ nav{
 //--------------------------------------------------
 
 section{
-    padding-top:10%;
+    padding:10% 0;
 }
 .section-title{
     padding-bottom: 2%;
@@ -133,31 +133,44 @@ section{
 #services{
     background: $dark;
     color: $light;
+}
+.title-info{
     text-align: center;
 }
 
 .process-container{
-    padding: 10% 0;
     margin: 5% 0;
-    min-height:365px;
+    min-width:100%;
+    max-height:70px;
+    overflow:hidden;
     background: lighten($dark, 3%);
-    text-align: center;
-    transition:all 500ms ease-in-out;
-
+    transition:all 700ms ease-in-out;
     & button{
     background:none;
     color:$light;
     border:none;
-    margin-top:10%;
+    text-align: center;
     }
 }
 
 .title-content{
-    padding: 10% 0;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    padding:5% 0;
+    min-width: 100%;
+    max-width:100%;
+    background: darken($dark, 3%);
+
 }
 
-.title-content h3{
-    padding-top:10%;
+.title-content i{
+    padding:0 10%;
+}
+.title-content h4{
+    padding:0 10%;
+}
+.title-content button{
+    padding:0 10%;
 }
 
 .body-content{
@@ -165,31 +178,28 @@ section{
     padding:10% 5%;
 }
 
+.body-content p a{
+    text-align: center;
+}
+
 .content-hidden{
     display: none;
 }
 
 .fa-sitemap,
-.fa-rocket{
-    color:#2ecc71;
-    text-shadow: 0 0 5px $dark;
-}
-
+.fa-rocket,
 .fa-pencil-square-o,
-.fa-wrench{
-    color:#2980b9;
-    text-shadow: 0 0 5px $dark;
-}
-
-.fa-code,
+.fa-wrench,.fa-code,
 .fa-users{
-    color:#16a085;
+    color:$link-color;
     text-shadow: 0 0 5px $dark;
 }
 
 //About Styles
 //--------------------------------------------------
 #about{
+    background: $dark;
+    color:$light;
     text-align: justify;
 }
 #about img{
@@ -202,13 +212,20 @@ section{
 
 #projects{
     background: #bdc3c7;
+    color:$dark;
+    & h4{
+        text-align: center;
+    }
+    & h5{
+        text-align: center;
+    }
 }
 .project-link{
-    color:$font-color;
+    color:$dark;
 }
 .project-link img{
     padding-bottom:10%;
-     width: 100%;
+    width: 100%;
 }
 
 .project-link h3,
@@ -217,7 +234,10 @@ section{
 }
 
 .project-container{
-    padding: 15% 0;
+    background: darken(#bdc3c7, 3%);
+    padding: 15% 5%;
+    margin: 5% 0;
+    text-align: justify;
 }
 
 .project-tech{
@@ -235,12 +255,21 @@ a {
 }
 .inline-link{
     padding: 0 10px;
-    background: #2c3e50;
+    background: $link-color;
     color:$light;
     transition: all 200ms ease-in-out;
     &:hover{
         background: lighten(#2c3e50, 20%);
         color:$light;
+    }
+}
+@media (#{$bp-larger-than-desktop}) {
+    .inline-link{
+        background: none;
+        border-bottom:2px solid $link-color;
+        &:hover{
+            background: $link-color;
+        }
     }
 }
 
