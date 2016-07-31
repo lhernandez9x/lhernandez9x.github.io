@@ -12,6 +12,25 @@ body {
     color: $font-color;
 }
 
+// Section Styles
+//--------------------------------------------------
+
+.section-title{
+    letter-spacing: .5px;
+}
+
+.more-button{
+    width:90px;
+    font-weight: 700;
+    color:$light;
+    background: none;
+    border:none;
+    position:absolute;
+    top:88vh;
+    left:40%;
+}
+
+
 
 // Header Styles
 //--------------------------------------------------
@@ -21,6 +40,160 @@ header{
     background-size: cover;
     height: 100vh;
     width:100vw;
+    position:relative;
+    color:$light;
+    text-shadow: 0 0 2px #323232;
+    & h1{
+        padding:20% 0;
+        text-align: center;
+        border-top:2px solid $border-color;
+    }
+    & h4{
+        padding: 5%;
+        text-align: justify;
+    }
+}
+nav{
+    position:fixed;
+    top:2%;
+    right:5%;
+}
+
+.header-button{
+    padding:2% 5%;
+    background: $link-color;
+    border: 1px solid $border-color;
+    color:$border-color;
+    &:first-child{
+        margin: 0 2% 0 5%;
+    }
+}
+
+// Dedication Styles
+//--------------------------------------------------
+.dedication{
+    background: url(../images/sm/vision-sm.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width:100vw;
+    color:$dark;
+    position: relative;
+    & h1{
+        padding:20% 0 10% 0;
+        text-align: center;
+    }
+    & h5{
+        padding: 0 5%;
+        text-align: justify;
+    }
+}
+
+
+// Passion Styles
+//--------------------------------------------------
+
+.passion{
+    background: url(../images/sm/passion-sm.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width:100vw;
+    position: relative;
+    color:$light;
+    & h5{
+        color:$light;
+        padding:20% 10%;
+        text-align: justify;
+        text-shadow: 2px 2px 2px #000;
+    }
+    
+}
+
+.passion-quote{
+    margin: 0 auto;
+    width:50%;
+    padding: 10% 0;
+    & h1{
+        margin:0;
+        padding: 2% 0;
+        color:$link-color;
+        text-align: center;
+        border-top: 2px solid $border-color;
+        border-bottom: 2px solid $border-color; 
+    }
+    & h6{
+        margin:0;
+        text-align: center;
+    }
+}
+
+// Projects Styles
+//--------------------------------------------------
+.projects{
+    color:$light;
+    position: relative;
+}
+.project{
+    margin:0;
+    padding:0;
+}
+
+.project-info{
+    max-width:480px;
+    height:300px;
+    color:$light;
+    position: absolute;
+    // /text-shadow: 0 0 5px #000;
+    margin:0;
+    padding:0;
+    transform: translateY(-307px);
+    background:rgba(127, 140, 141,0.8);
+    z-index:1000 !important;
+}
+
+.project-title{
+    text-align: center;
+}
+
+.project-tech{
+    text-align: center;
+}
+
+.project-description{
+    text-align: justify;
+    padding:0 7%;
+}
+
+.fa-github,
+.fa-external-link{
+    position: absolute;
+}
+
+.fa-github{
+    padding:2% 25%;
+}
+
+.fa-external-link{
+    padding:2% 60%
+}
+
+// Contact Styles
+//--------------------------------------------------
+.contact{
+    padding:10% 0;
+    & h3{
+        text-align: center;
+    }
+    & i{
+        position:relative;
+        padding:2% 10%;
+    }
+}
+
+// Footer Styles
+//--------------------------------------------------
+footer{
+    background: $dark;
+    color:$light;
 }
 
 // Links
@@ -34,7 +207,7 @@ a {
 }
 .inline-link{
     padding: 0 10px;
-    background: $link-color;
+    border-bottom:1px dotted $link-color;
     color:$light;
     transition: all 200ms ease-in-out;
     &:hover{

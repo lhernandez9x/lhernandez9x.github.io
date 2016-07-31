@@ -217,11 +217,141 @@ body {
   font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #7f8c8d; }
 
+.section-title {
+  letter-spacing: .5px; }
+
+.more-button {
+  width: 90px;
+  font-weight: 700;
+  color: #ecf0f1;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 88vh;
+  left: 40%; }
+
 header {
   background: url(../images/sm/creative-sm.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  position: relative;
+  color: #ecf0f1;
+  text-shadow: 0 0 2px #323232; }
+  header h1 {
+    padding: 20% 0;
+    text-align: center;
+    border-top: 2px solid #ecf0f1; }
+  header h4 {
+    padding: 5%;
+    text-align: justify; }
+
+nav {
+  position: fixed;
+  top: 2%;
+  right: 5%; }
+
+.header-button {
+  padding: 2% 5%;
+  background: #e74c3c;
+  border: 1px solid #ecf0f1;
+  color: #ecf0f1; }
+  .header-button:first-child {
+    margin: 0 2% 0 5%; }
+
+.dedication {
+  background: url(../images/sm/vision-sm.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  color: #7f8c8d;
+  position: relative; }
+  .dedication h1 {
+    padding: 20% 0 10% 0;
+    text-align: center; }
+  .dedication h5 {
+    padding: 0 5%;
+    text-align: justify; }
+
+.passion {
+  background: url(../images/sm/passion-sm.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  color: #ecf0f1; }
+  .passion h5 {
+    color: #ecf0f1;
+    padding: 20% 10%;
+    text-align: justify;
+    text-shadow: 2px 2px 2px #000; }
+
+.passion-quote {
+  margin: 0 auto;
+  width: 50%;
+  padding: 10% 0; }
+  .passion-quote h1 {
+    margin: 0;
+    padding: 2% 0;
+    color: #e74c3c;
+    text-align: center;
+    border-top: 2px solid #ecf0f1;
+    border-bottom: 2px solid #ecf0f1; }
+  .passion-quote h6 {
+    margin: 0;
+    text-align: center; }
+
+.projects {
+  color: #ecf0f1;
+  position: relative; }
+
+.project {
+  margin: 0;
+  padding: 0; }
+
+.project-info {
+  max-width: 480px;
+  height: 300px;
+  color: #ecf0f1;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-307px);
+          transform: translateY(-307px);
+  background: rgba(127, 140, 141, 0.8);
+  z-index: 1000 !important; }
+
+.project-title {
+  text-align: center; }
+
+.project-tech {
+  text-align: center; }
+
+.project-description {
+  text-align: justify;
+  padding: 0 7%; }
+
+.fa-github,
+.fa-external-link {
+  position: absolute; }
+
+.fa-github {
+  padding: 2% 25%; }
+
+.fa-external-link {
+  padding: 2% 60%; }
+
+.contact {
+  padding: 10% 0; }
+  .contact h3 {
+    text-align: center; }
+  .contact i {
+    position: relative;
+    padding: 2% 10%; }
+
+footer {
+  background: #7f8c8d;
+  color: #ecf0f1; }
 
 a {
   color: #e74c3c;
@@ -231,7 +361,7 @@ a {
 
 .inline-link {
   padding: 0 10px;
-  background: #e74c3c;
+  border-bottom: 1px dotted #e74c3c;
   color: #ecf0f1;
   transition: all 200ms ease-in-out; }
   .inline-link:hover {
