@@ -11,9 +11,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%;
+  text-size-adjust: 100%;
   text-size-adjust: 100%; }
 
 body {
@@ -135,9 +133,7 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  appearance: button;
   cursor: pointer; }
 
 button[disabled],
@@ -162,16 +158,12 @@ input[type="number"]::outer-spin-button {
   height: auto; }
 
 input[type="search"] {
-  -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
   box-sizing: content-box; }
 
 input[type="search"]::search-cancel-button,
 input[type="search"]::search-decoration {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
+  appearance: none; }
 
 fieldset {
   border: 1px solid #c0c0c0;
@@ -210,6 +202,7 @@ html {
 
 body {
   position: relative;
+  overflow-x: hidden;
   background: #ecf0f1;
   font-size: 1.5em;
   line-height: 1.6;
@@ -303,16 +296,21 @@ nav {
 
 .projects {
   color: #ecf0f1;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .project-container {
   padding: 10% 0; }
   .project-container h3 {
+    text-align: center;
     color: #7f8c8d; }
 
 .project {
   margin: 0;
   padding: 0; }
+  .project img {
+    width: 360px;
+    height: 300px; }
 
 .project-info {
   max-width: 480px;
@@ -321,8 +319,7 @@ nav {
   position: absolute;
   margin: 0;
   padding: 0;
-  -webkit-transform: translateY(-307px);
-          transform: translateY(-307px);
+  transform: translateY(-307px);
   background: rgba(127, 140, 141, 0.8);
   z-index: 1000 !important; }
 
