@@ -305,6 +305,11 @@ nav {
   color: #ecf0f1;
   position: relative; }
 
+.project-container {
+  padding: 10% 0; }
+  .project-container h3 {
+    color: #7f8c8d; }
+
 .project {
   margin: 0;
   padding: 0; }
@@ -322,6 +327,7 @@ nav {
   z-index: 1000 !important; }
 
 .project-title {
+  padding: 2% 0;
   text-align: center; }
 
 .project-tech {
@@ -350,6 +356,8 @@ nav {
     padding: 2% 10%; }
 
 footer {
+  height: 100%;
+  padding: 2%;
   background: #7f8c8d;
   color: #ecf0f1; }
 
