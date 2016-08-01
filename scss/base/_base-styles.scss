@@ -21,14 +21,23 @@ body {
 }
 
 .more-button{
-    width:90px;
+    max-width: 90px;
     font-weight: 700;
     color:$light;
     background: none;
     border:none;
     position:absolute;
     top:88vh;
-    left:40%;
+    left:38vw;
+}
+
+@media (#{$bp-larger-than-desktop}){
+    .section-info{
+        padding:5% 30%;
+    }
+    .more-button{
+        left:48%;
+    }
 }
 
 
@@ -54,20 +63,33 @@ header{
         text-align: justify;
     }
 }
-nav{
-    position:fixed;
-    top:2%;
-    right:5%;
-}
 
 .header-button{
-    padding:2% 5%;
+    width:300px;
+    padding:2% 3%;
     background: $link-color;
     border: 1px solid $border-color;
     color:$border-color;
     &:first-child{
-        margin: 0 2% 0 5%;
+        margin: 2% 8%;
     }
+}
+@media (#{$bp-larger-than-desktop}) {
+    header{
+        background: url(../images/lg/creative-lg.jpg) no-repeat;
+        background-size: cover;
+        & h1 {
+            padding:5% 0;
+        }
+        & h4 {
+            text-align: center;   
+        }
+        .header-button{
+            width:100%;
+        }
+    }
+    
+    
 }
 
 // Dedication Styles
@@ -86,6 +108,13 @@ nav{
     & h5{
         padding: 0 5%;
         text-align: justify;
+    }
+}
+
+@media (#{$bp-larger-than-desktop}) {
+    .dedication{
+        background: url(../images/lg/vision-lg.jpg) no-repeat;
+        background-size: cover;
     }
 }
 
@@ -115,86 +144,65 @@ nav{
     padding: 10% 0;
     & h1{
         margin:0;
-        padding: 2% 0;
         color:$link-color;
         text-align: center;
         border-top: 2px solid $border-color;
         border-bottom: 2px solid $border-color; 
     }
-    & h6{
+    & h5{
+        padding: 0;
         margin:0;
         text-align: center;
+    }
+}
+@media (#{$bp-larger-than-desktop}) {
+    .passion{
+        background: url(../images/lg/passion-lg.jpg) no-repeat;
+        background-size: cover;
     }
 }
 
 // Projects Styles
 //--------------------------------------------------
 .projects{
-    color:$light;
+    padding:5% 0;
+    color:$dark;
     position:relative;
-    overflow: hidden;
-}
-
-.project-container{
-    padding: 10% 0;
-    & h3{
-        text-align: center;
-        color:$dark;
-    }
-}
-.project{
-    margin:0;
-    padding:0;
     & img{
-        width:360px;
-        height: 300px;
+        width:100%;
+    }
+    & h4{
+        padding:2% 0;
+        text-align: center;
+        border-top: 1px solid $dark;
+        border-bottom: 1px solid $dark;
     }
 }
 
-.project-info{
-    max-width:480px;
-    height:300px;
-    color:$light;
-    position: absolute;
-    // /text-shadow: 0 0 5px #000;
-    margin:0;
-    padding:0;
-    transform: translateY(-307px);
-    background:rgba(127, 140, 141,0.8);
-    z-index:1000 !important;
-}
-
-.project-title{
-    padding:2% 0;
-    text-align: center;
+.project{
+    padding:10% 0;
+    & a{
+        padding:0 15%;
+    }
 }
 
 .project-tech{
-    text-align: center;
+    text-align: justify;
 }
 
 .project-description{
+    padding:2% 0;
     text-align: justify;
-    padding:0 7%;
 }
 
-.fa-github,
-.fa-external-link{
-    position: absolute;
-}
 
-.fa-github{
-    padding:2% 25%;
-}
-
-.fa-external-link{
-    padding:2% 60%
-}
 
 // Contact Styles
 //--------------------------------------------------
 .contact{
     padding:10% 0;
+    background: $dark;
+    color:$light;
     & h3{
         text-align: center;
     }
@@ -209,8 +217,8 @@ nav{
 footer{
     height:100%;
     padding:2%;
-    background: $dark;
-    color:$light;
+    background: $light;
+    color:$dark;
 }
 
 // Links

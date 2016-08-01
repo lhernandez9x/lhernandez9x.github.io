@@ -214,14 +214,20 @@ body {
   letter-spacing: .5px; }
 
 .more-button {
-  width: 90px;
+  max-width: 90px;
   font-weight: 700;
   color: #ecf0f1;
   background: none;
   border: none;
   position: absolute;
   top: 88vh;
-  left: 40%; }
+  left: 38vw; }
+
+@media (min-width: 1000px) {
+  .section-info {
+    padding: 5% 30%; }
+  .more-button {
+    left: 48%; } }
 
 header {
   background: url(../images/sm/creative-sm.jpg) no-repeat;
@@ -239,18 +245,25 @@ header {
     padding: 5%;
     text-align: justify; }
 
-nav {
-  position: fixed;
-  top: 2%;
-  right: 5%; }
-
 .header-button {
-  padding: 2% 5%;
+  width: 300px;
+  padding: 2% 3%;
   background: #e74c3c;
   border: 1px solid #ecf0f1;
   color: #ecf0f1; }
   .header-button:first-child {
-    margin: 0 2% 0 5%; }
+    margin: 2% 8%; }
+
+@media (min-width: 1000px) {
+  header {
+    background: url(../images/lg/creative-lg.jpg) no-repeat;
+    background-size: cover; }
+    header h1 {
+      padding: 5% 0; }
+    header h4 {
+      text-align: center; }
+    header .header-button {
+      width: 100%; } }
 
 .dedication {
   background: url(../images/sm/vision-sm.jpg) no-repeat;
@@ -265,6 +278,11 @@ nav {
   .dedication h5 {
     padding: 0 5%;
     text-align: justify; }
+
+@media (min-width: 1000px) {
+  .dedication {
+    background: url(../images/lg/vision-lg.jpg) no-repeat;
+    background-size: cover; } }
 
 .passion {
   background: url(../images/sm/passion-sm.jpg) no-repeat;
@@ -285,67 +303,48 @@ nav {
   padding: 10% 0; }
   .passion-quote h1 {
     margin: 0;
-    padding: 2% 0;
     color: #e74c3c;
     text-align: center;
     border-top: 2px solid #ecf0f1;
     border-bottom: 2px solid #ecf0f1; }
-  .passion-quote h6 {
+  .passion-quote h5 {
+    padding: 0;
     margin: 0;
     text-align: center; }
 
-.projects {
-  color: #ecf0f1;
-  position: relative;
-  overflow: hidden; }
+@media (min-width: 1000px) {
+  .passion {
+    background: url(../images/lg/passion-lg.jpg) no-repeat;
+    background-size: cover; } }
 
-.project-container {
-  padding: 10% 0; }
-  .project-container h3 {
+.projects {
+  padding: 5% 0;
+  color: #7f8c8d;
+  position: relative; }
+  .projects img {
+    width: 100%; }
+  .projects h4 {
+    padding: 2% 0;
     text-align: center;
-    color: #7f8c8d; }
+    border-top: 1px solid #7f8c8d;
+    border-bottom: 1px solid #7f8c8d; }
 
 .project {
-  margin: 0;
-  padding: 0; }
-  .project img {
-    width: 360px;
-    height: 300px; }
-
-.project-info {
-  max-width: 480px;
-  height: 300px;
-  color: #ecf0f1;
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  transform: translateY(-307px);
-  background: rgba(127, 140, 141, 0.8);
-  z-index: 1000 !important; }
-
-.project-title {
-  padding: 2% 0;
-  text-align: center; }
+  padding: 10% 0; }
+  .project a {
+    padding: 0 15%; }
 
 .project-tech {
-  text-align: center; }
+  text-align: justify; }
 
 .project-description {
-  text-align: justify;
-  padding: 0 7%; }
-
-.fa-github,
-.fa-external-link {
-  position: absolute; }
-
-.fa-github {
-  padding: 2% 25%; }
-
-.fa-external-link {
-  padding: 2% 60%; }
+  padding: 2% 0;
+  text-align: justify; }
 
 .contact {
-  padding: 10% 0; }
+  padding: 10% 0;
+  background: #7f8c8d;
+  color: #ecf0f1; }
   .contact h3 {
     text-align: center; }
   .contact i {
@@ -355,8 +354,8 @@ nav {
 footer {
   height: 100%;
   padding: 2%;
-  background: #7f8c8d;
-  color: #ecf0f1; }
+  background: #ecf0f1;
+  color: #7f8c8d; }
 
 a {
   color: #e74c3c;

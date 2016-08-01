@@ -19,10 +19,14 @@ moreButton.on('click', function(){
     var self = $(this),
         parent = self.parent(),
         trueTop = top += window.innerHeight,
-        body = parent.parent();
-    // anitmate smooth scroll to next section     
-    body.animate({scrollTop: trueTop}, 750);
+        body = $('body');
 
+    // anitmate smooth scroll to next section
+    // will animate if trueTop is less than window.Innerheight * 3
+    if(trueTop < (window.innerHeight * 3) + 1 ){
+
+        body.animate({scrollTop: trueTop}, 750);
+    }
 })
 
 
