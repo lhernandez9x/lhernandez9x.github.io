@@ -180,10 +180,7 @@ header{
 }
 
 .project{
-    padding:10% 0;
-    & a{
-        padding:0 15%;
-    }
+    padding:2% 0;
 }
 
 .project-tech{
@@ -191,8 +188,14 @@ header{
 }
 
 .project-description{
-    padding:2% 0;
+    padding:5% 0;
     text-align: justify;
+}
+.project-links{
+    padding: 0 auto;
+    & a{
+        padding:0 18%;
+    }
 }
 
 
@@ -257,5 +260,5 @@ hr {
     margin-top: 3rem;
     margin-bottom: 3.5rem;
     border-width: 0;
-    border-top: 1px solid $light;
+    border-top: 1px solid $dark;
 }

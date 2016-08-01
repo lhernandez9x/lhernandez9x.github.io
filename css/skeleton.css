@@ -330,16 +330,19 @@ header {
     border-bottom: 1px solid #7f8c8d; }
 
 .project {
-  padding: 10% 0; }
-  .project a {
-    padding: 0 15%; }
+  padding: 2% 0; }
 
 .project-tech {
   text-align: justify; }
 
 .project-description {
-  padding: 2% 0;
+  padding: 5% 0;
   text-align: justify; }
+
+.project-links {
+  padding: 0 auto; }
+  .project-links a {
+    padding: 0 18%; }
 
 .contact {
   padding: 10% 0;
@@ -383,7 +386,7 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #ecf0f1; }
+  border-top: 1px solid #7f8c8d; }
 
 .u-full-width {
   width: 100%;
