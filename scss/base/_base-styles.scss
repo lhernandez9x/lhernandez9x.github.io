@@ -3,8 +3,8 @@ html {
 }
 
 body {
-    position:relative;
-    overflow-x:hidden; 
+    position: relative;
+    overflow-x: hidden;
     background: $light;
     font-size: 1.5em; // currently ems cause chrome bug misinterpreting rems on body element
     line-height: 1.6;
@@ -15,272 +15,268 @@ body {
 
 // Section Styles
 //--------------------------------------------------
-
-.section-title{
+.section-title {
     letter-spacing: .5px;
 }
 
-.more-button{
+.more-button {
     max-width: 90px;
     font-weight: 700;
-    color:$light;
+    color: $light;
     background: none;
-    border:none;
-    position:absolute;
-    top:88vh;
-    left:38vw;
+    border: none;
+    position: absolute;
+    top: 88vh;
+    left: 38vw;
 }
 
-@media (#{$bp-larger-than-desktop}){
-    .section-info{
-        padding:5% 30%;
-        margin-top:5%;
+@media (#{$bp-larger-than-desktop}) {
+    .section-info {
+        padding: 5% 30%;
+        margin-top: 5%;
     }
-    .more-button{
-        left:47%;
+    .more-button {
+        left: 47%;
     }
 }
-
-
 
 // Header Styles
 //--------------------------------------------------
-
-header{
+header {
     background: url(../images/sm/creative-sm.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
-    width:100vw;
-    position:relative;
-    color:$light;
+    width: 100vw;
+    position: relative;
+    color: $light;
     text-shadow: 0 0 2px #323232;
-    & h1{
-        padding:20% 0;
+    & h1 {
+        padding: 20% 0;
         text-align: center;
-        border-top:2px solid $border-color;
+        border-top: 2px solid $border-color;
     }
-    & h4{
+    & h4 {
         padding: 5%;
         text-align: justify;
     }
 }
 
-.header-button{
-    width:300px;
-    padding:2% 3%;
+.header-button {
+    width: 300px;
+    padding: 2% 3%;
     background: $primary-color;
     border: 1px solid $border-color;
-    color:$border-color;
-    &:first-child{
+    color: $border-color;
+    &:first-child {
         margin: 2% 8%;
     }
 }
+
 @media (#{$bp-larger-than-desktop}) {
-    header{
+    header {
         background: url(../images/lg/creative-lg.jpg) no-repeat;
         background-size: cover;
         & h1 {
-            padding:5% 0 0 0;
+            padding: 5% 0 0 0;
         }
         & h4 {
             text-align: center;
-            padding-bottom:5%;   
+            padding-bottom: 5%;
         }
-        .header-button-container{
-            margin-left:15%;
+        .header-button-container {
+            margin-left: 15%;
         }
-        .header-button{
-            margin:0;
+        .header-button {
+            margin: 0;
         }
-    } 
+    }
 }
 
 // Dedication Styles
 //--------------------------------------------------
-.dedication{
+.dedication {
     background: url(../images/sm/vision-sm.jpg) no-repeat;
     background-size: cover;
-    height:100vh;
-    width:100vw;
-    color:$dark;
+    height: 100vh;
+    width: 100vw;
+    color: $dark;
     position: relative;
-    & h1{
-        padding:20% 0 10% 0;
+    & h1 {
+        padding: 20% 0 10% 0;
         text-align: center;
     }
-    & h5{
+    & h5 {
         padding: 0 5%;
         text-align: justify;
     }
 }
 
 @media (#{$bp-larger-than-desktop}) {
-    .dedication{
+    .dedication {
         background: url(../images/lg/vision-lg.jpg) no-repeat;
         background-size: cover;
-        & h1{
-            padding:5% 0;
+        & h1 {
+            padding: 5% 0;
         }
     }
 }
-
 
 // Passion Styles
 //--------------------------------------------------
-
-.passion{
+.passion {
     background: url(../images/sm/passion-sm.jpg) no-repeat;
     background-size: cover;
-    height:100vh;
-    width:100vw;
+    height: 100vh;
+    width: 100vw;
     position: relative;
-    color:$light;
-    & h5{
-        color:$light;
-        padding:20% 10%;
+    color: $light;
+    & h5 {
+        color: $light;
+        padding: 20% 10%;
         text-align: justify;
         text-shadow: 2px 2px 2px #000;
     }
-    
 }
 
-.passion-quote{
+.passion-quote {
     margin: 0 auto;
-    width:50%;
+    width: 50%;
     padding: 10% 0;
-    & h1{
-        margin:0;
-        color:$link-color;
+    & h1 {
+        margin: 0;
+        color: $link-color;
         text-shadow: 1px 0 3px #121212;
         text-align: center;
         border-top: 2px solid $border-color;
-        border-bottom: 2px solid $border-color; 
+        border-bottom: 2px solid $border-color;
     }
-    & h5{
+    & h5 {
         padding: 0;
-        margin:0;
+        margin: 0;
         text-align: center;
     }
 }
+
 @media (#{$bp-larger-than-desktop}) {
-    .passion{
+    .passion {
         background: url(../images/lg/passion-lg.jpg) no-repeat;
         background-size: cover;
-        & h5{
-            padding:2% 0;
+        & h5 {
+            padding: 2% 0;
         }
-        .section-info{
-            padding:0 5%;
+        .section-info {
+            padding: 0 5%;
         }
     }
-    .passion-quote{
-        padding:2% 0;
+    .passion-quote {
+        padding: 2% 0;
     }
 }
 
 // Projects Styles
 //--------------------------------------------------
-.projects{
-    padding:5% 0;
-    color:$dark;
-    position:relative;
-    & img{
-        width:100%;
+.projects {
+    padding: 5% 0;
+    color: $dark;
+    position: relative;
+    & img {
+        width: 100%;
     }
-    & h4{
-        padding:2% 0;
+    & h4 {
+        padding: 2% 0;
         text-align: center;
         border-top: 1px solid $dark;
         border-bottom: 1px solid $dark;
     }
 }
 
-.project{
-    padding:2% 0;
-    & img{
+.project {
+    padding: 2% 0;
+    & img {
         box-shadow: 0 0 20px $dark;
     }
 }
 
-.project-tech{
-    color:$primary-color;
+.project-tech {
+    color: $primary-color;
     text-align: justify;
 }
 
-.project-description{
-    padding:5% 0;
+.project-description {
+    padding: 5% 0;
     text-align: justify;
 }
-.project-links{
+
+.project-links {
     padding: 0 auto;
-    & a{
-        padding:0 18%;
+    & a {
+        padding: 0 18%;
     }
 }
 
-@media (#{$bp-larger-than-desktop}){
-    .projects{
-        padding:2% 0;
+@media (#{$bp-larger-than-desktop}) {
+    .projects {
+        padding: 2% 0;
     }
-    .project-title{
-        padding:15% 0 0 0;
+    .project-title {
+        padding: 15% 0 0 0;
     }
-    .project div:first-child{
-        padding:0 5%;
+    .project div:first-child {
+        padding: 0 5%;
     }
-    .project div:last-child{
+    .project div:last-child {
         padding: 3% 6% 3% 3%;
     }
-    .project-links{
-        & a{
-            padding:0 15%;
+    .project-links {
+        & a {
+            padding: 0 15%;
         }
     }
 }
 
 // Contact Styles
 //--------------------------------------------------
-.contact{
-    padding:10% 0;
+.contact {
+    padding: 10% 0;
     background: $dark;
-    color:$light;
-    & h3{
+    color: $light;
+    & h3 {
         text-align: center;
     }
-    & i{
-        position:relative;
-        padding:2% 10%;
+    & i {
+        position: relative;
+        padding: 2% 10%;
     }
-    .contact-info{
+    .contact-info {
         text-align: center;
-        & h4{
-            margin:0;
+        & h4 {
+            margin: 0;
         }
     }
 }
 
 @media (#{$bp-larger-than-desktop}) {
-    .contact{
-        padding:5% 0;
+    .contact {
+        padding: 5% 0;
     }
-    .contact-links{
-        margin-left:23%;
+    .contact-links {
+        margin-left: 23%;
     }
 }
 
 // Footer Styles
 //--------------------------------------------------
-footer{
-    height:100%;
-    padding:2%;
+footer {
+    height: 100%;
+    padding: 2%;
     background: $light;
-    color:$dark;
+    color: $dark;
 }
 
 @media (#{$bp-larger-than-desktop}) {
-    footer{
-        height:50%;
-        padding:1% 5%;
+    footer {
+        height: 50%;
+        padding: 1% 5%;
     }
 }
 
@@ -293,21 +289,23 @@ a {
         color: darken($link-color, 5%);
     }
 }
-.inline-link{
+
+.inline-link {
     padding: 0 10px;
-    border-bottom:1px dotted $link-color;
-    color:$light;
+    border-bottom: 1px dotted $link-color;
+    color: $light;
     transition: all 200ms ease-in-out;
-    &:hover{
+    &:hover {
         background: lighten(#2c3e50, 20%);
-        color:$light;
+        color: $light;
     }
 }
+
 @media (#{$bp-larger-than-desktop}) {
-    .inline-link{
+    .inline-link {
         background: none;
-        border-bottom:2px solid $link-color;
-        &:hover{
+        border-bottom: 2px solid $link-color;
+        &:hover {
             background: $link-color;
         }
     }
@@ -315,7 +313,6 @@ a {
 
 // Misc
 //––––––––––––––––––––––––––––––––––––––––––––––––––
-
 hr {
     margin-top: 3rem;
     margin-bottom: 3.5rem;
