@@ -225,9 +225,10 @@ body {
 
 @media (min-width: 1000px) {
   .section-info {
-    padding: 5% 30%; }
+    padding: 5% 30%;
+    margin-top: 5%; }
   .more-button {
-    left: 48%; } }
+    left: 46%; } }
 
 header {
   background: url(../images/sm/creative-sm.jpg) no-repeat;
@@ -262,8 +263,8 @@ header {
       padding: 5% 0; }
     header h4 {
       text-align: center; }
-    header .header-button {
-      width: 100%; } }
+    header .header-button:first-child {
+      margin: 0 25%; } }
 
 .dedication {
   background: url(../images/sm/vision-sm.jpg) no-repeat;
@@ -282,7 +283,9 @@ header {
 @media (min-width: 1000px) {
   .dedication {
     background: url(../images/lg/vision-lg.jpg) no-repeat;
-    background-size: cover; } }
+    background-size: cover; }
+    .dedication h1 {
+      padding: 5% 0 10% 0; } }
 
 .passion {
   background: url(../images/sm/passion-sm.jpg) no-repeat;
@@ -316,7 +319,11 @@ header {
 @media (min-width: 1000px) {
   .passion {
     background: url(../images/lg/passion-lg.jpg) no-repeat;
-    background-size: cover; } }
+    background-size: cover; }
+    .passion h5 {
+      padding: 5% 0; }
+  .passion-quote {
+    padding: 5% 0; } }
 
 .projects {
   padding: 5% 0;
@@ -346,6 +353,18 @@ header {
   .project-links a {
     padding: 0 18%; }
 
+@media (min-width: 1000px) {
+  .projects {
+    padding: 2% 0; }
+  .project-title {
+    padding: 15% 0 0 0; }
+  .project div:first-child {
+    padding: 0 5%; }
+  .project div:last-child {
+    padding: 3% 6% 3% 3%; }
+  .project-links a {
+    padding: 0 15%; } }
+
 .contact {
   padding: 10% 0;
   background: #7f8c8d;
@@ -356,11 +375,22 @@ header {
     position: relative;
     padding: 2% 10%; }
 
+@media (min-width: 1000px) {
+  .contact {
+    padding: 5% 0; }
+  .contact-links {
+    margin-left: 20%; } }
+
 footer {
   height: 100%;
   padding: 2%;
   background: #ecf0f1;
   color: #7f8c8d; }
+
+@media (min-width: 1000px) {
+  footer {
+    height: 50%;
+    padding: 1% 5%; } }
 
 a {
   color: #e74c3c;

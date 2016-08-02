@@ -34,9 +34,10 @@ body {
 @media (#{$bp-larger-than-desktop}){
     .section-info{
         padding:5% 30%;
+        margin-top:5%;
     }
     .more-button{
-        left:48%;
+        left:46%;
     }
 }
 
@@ -84,12 +85,10 @@ header{
         & h4 {
             text-align: center;   
         }
-        .header-button{
-            width:100%;
+        .header-button:first-child {
+            margin:0 25%;
         }
-    }
-    
-    
+    } 
 }
 
 // Dedication Styles
@@ -115,6 +114,9 @@ header{
     .dedication{
         background: url(../images/lg/vision-lg.jpg) no-repeat;
         background-size: cover;
+        & h1{
+            padding:5% 0 10% 0;
+        }
     }
 }
 
@@ -160,6 +162,12 @@ header{
     .passion{
         background: url(../images/lg/passion-lg.jpg) no-repeat;
         background-size: cover;
+        & h5{
+            padding:5% 0;
+        }
+    }
+    .passion-quote{
+        padding:5% 0;
     }
 }
 
@@ -200,7 +208,25 @@ header{
     }
 }
 
-
+@media (#{$bp-larger-than-desktop}){
+    .projects{
+        padding:2% 0;
+    }
+    .project-title{
+        padding:15% 0 0 0;
+    }
+    .project div:first-child{
+        padding:0 5%;
+    }
+    .project div:last-child{
+        padding: 3% 6% 3% 3%;
+    }
+    .project-links{
+        & a{
+            padding:0 15%;
+        }
+    }
+}
 
 // Contact Styles
 //--------------------------------------------------
@@ -217,6 +243,15 @@ header{
     }
 }
 
+@media (#{$bp-larger-than-desktop}) {
+    .contact{
+        padding:5% 0;
+    }
+    .contact-links{
+        margin-left:20%;
+    }
+}
+
 // Footer Styles
 //--------------------------------------------------
 footer{
@@ -224,6 +259,13 @@ footer{
     padding:2%;
     background: $light;
     color:$dark;
+}
+
+@media (#{$bp-larger-than-desktop}) {
+    footer{
+        height:50%;
+        padding:1% 5%;
+    }
 }
 
 // Links
