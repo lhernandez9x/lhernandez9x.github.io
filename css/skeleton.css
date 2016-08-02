@@ -248,7 +248,7 @@ header {
 .header-button {
   width: 300px;
   padding: 2% 3%;
-  background: #e74c3c;
+  background: #2980b9;
   border: 1px solid #ecf0f1;
   color: #ecf0f1; }
   .header-button:first-child {
@@ -304,6 +304,7 @@ header {
   .passion-quote h1 {
     margin: 0;
     color: #e74c3c;
+    text-shadow: 1px 0 3px #121212;
     text-align: center;
     border-top: 2px solid #ecf0f1;
     border-bottom: 2px solid #ecf0f1; }
@@ -333,6 +334,7 @@ header {
   padding: 2% 0; }
 
 .project-tech {
+  color: #2980b9;
   text-align: justify; }
 
 .project-description {

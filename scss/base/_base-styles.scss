@@ -67,7 +67,7 @@ header{
 .header-button{
     width:300px;
     padding:2% 3%;
-    background: $link-color;
+    background: $primary-color;
     border: 1px solid $border-color;
     color:$border-color;
     &:first-child{
@@ -145,6 +145,7 @@ header{
     & h1{
         margin:0;
         color:$link-color;
+        text-shadow: 1px 0 3px #121212;
         text-align: center;
         border-top: 2px solid $border-color;
         border-bottom: 2px solid $border-color; 
@@ -184,6 +185,7 @@ header{
 }
 
 .project-tech{
+    color:$primary-color;
     text-align: justify;
 }
 
