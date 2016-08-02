@@ -8,26 +8,23 @@ function isMobile () {
 }
 
 //vars for smooth scrolling
-var dedicationSection = $('.dedication'),
-    passionSection = $('.passion'),
-    projectSection = $('.projects'),
-    contactSection = $('.contact'),
-    moreButton = $('.more-button'),
-    top = 0;
+var moreButton = $('.more-button');
 
-moreButton.on('click', function(){
+moreButton.on('click', function() {
     var self = $(this),
-        parent = self.parent(),
-        trueTop = top += window.innerHeight,
+        nextSection = self[0].firstChild.data,
+        top = window.innerHeight,
         body = $('body');
 
     // anitmate smooth scroll to next section
-    // will animate if trueTop is less than window.Innerheight * 3
-    if(trueTop < (window.innerHeight * 3) + 1 ){
-
-        body.animate({scrollTop: trueTop}, 750);
+    if(nextSection == 'Dedication') {
+        body.animate({scrollTop: top}, 750);
+    } else if(nextSection == 'Passion') {
+        body.animate({scrollTop: top * 2}, 750);
+    } else if(nextSection == 'Projects') {
+        body.animate({scrollTop: top * 3}, 750);
     }
-})
+});
 
 
 // end 
