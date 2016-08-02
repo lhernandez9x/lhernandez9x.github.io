@@ -37,7 +37,7 @@ body {
         margin-top:5%;
     }
     .more-button{
-        left:46%;
+        left:47%;
     }
 }
 
@@ -80,13 +80,17 @@ header{
         background: url(../images/lg/creative-lg.jpg) no-repeat;
         background-size: cover;
         & h1 {
-            padding:5% 0;
+            padding:5% 0 0 0;
         }
         & h4 {
-            text-align: center;   
+            text-align: center;
+            padding-bottom:5%;   
         }
-        .header-button:first-child {
-            margin:0 25%;
+        .header-button-container{
+            margin-left:15%;
+        }
+        .header-button{
+            margin:0;
         }
     } 
 }
@@ -115,7 +119,7 @@ header{
         background: url(../images/lg/vision-lg.jpg) no-repeat;
         background-size: cover;
         & h1{
-            padding:5% 0 10% 0;
+            padding:5% 0;
         }
     }
 }
@@ -163,11 +167,14 @@ header{
         background: url(../images/lg/passion-lg.jpg) no-repeat;
         background-size: cover;
         & h5{
-            padding:5% 0;
+            padding:2% 0;
+        }
+        .section-info{
+            padding:0 5%;
         }
     }
     .passion-quote{
-        padding:5% 0;
+        padding:2% 0;
     }
 }
 
@@ -190,6 +197,9 @@ header{
 
 .project{
     padding:2% 0;
+    & img{
+        box-shadow: 0 0 20px $dark;
+    }
 }
 
 .project-tech{
@@ -241,6 +251,12 @@ header{
         position:relative;
         padding:2% 10%;
     }
+    .contact-info{
+        text-align: center;
+        & h4{
+            margin:0;
+        }
+    }
 }
 
 @media (#{$bp-larger-than-desktop}) {
@@ -248,7 +264,7 @@ header{
         padding:5% 0;
     }
     .contact-links{
-        margin-left:20%;
+        margin-left:23%;
     }
 }
 

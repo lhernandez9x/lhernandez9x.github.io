@@ -228,7 +228,7 @@ body {
     padding: 5% 30%;
     margin-top: 5%; }
   .more-button {
-    left: 46%; } }
+    left: 47%; } }
 
 header {
   background: url(../images/sm/creative-sm.jpg) no-repeat;
@@ -260,11 +260,14 @@ header {
     background: url(../images/lg/creative-lg.jpg) no-repeat;
     background-size: cover; }
     header h1 {
-      padding: 5% 0; }
+      padding: 5% 0 0 0; }
     header h4 {
-      text-align: center; }
-    header .header-button:first-child {
-      margin: 0 25%; } }
+      text-align: center;
+      padding-bottom: 5%; }
+    header .header-button-container {
+      margin-left: 15%; }
+    header .header-button {
+      margin: 0; } }
 
 .dedication {
   background: url(../images/sm/vision-sm.jpg) no-repeat;
@@ -285,7 +288,7 @@ header {
     background: url(../images/lg/vision-lg.jpg) no-repeat;
     background-size: cover; }
     .dedication h1 {
-      padding: 5% 0 10% 0; } }
+      padding: 5% 0; } }
 
 .passion {
   background: url(../images/sm/passion-sm.jpg) no-repeat;
@@ -321,9 +324,11 @@ header {
     background: url(../images/lg/passion-lg.jpg) no-repeat;
     background-size: cover; }
     .passion h5 {
-      padding: 5% 0; }
+      padding: 2% 0; }
+    .passion .section-info {
+      padding: 0 5%; }
   .passion-quote {
-    padding: 5% 0; } }
+    padding: 2% 0; } }
 
 .projects {
   padding: 5% 0;
@@ -339,6 +344,8 @@ header {
 
 .project {
   padding: 2% 0; }
+  .project img {
+    box-shadow: 0 0 20px #7f8c8d; }
 
 .project-tech {
   color: #2980b9;
@@ -374,12 +381,16 @@ header {
   .contact i {
     position: relative;
     padding: 2% 10%; }
+  .contact .contact-info {
+    text-align: center; }
+    .contact .contact-info h4 {
+      margin: 0; }
 
 @media (min-width: 1000px) {
   .contact {
     padding: 5% 0; }
   .contact-links {
-    margin-left: 20%; } }
+    margin-left: 23%; } }
 
 footer {
   height: 100%;
