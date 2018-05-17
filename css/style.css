@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.initialTitle {
+  font-size: 15rem;
+}
+
+.header {
+  height: 100vh;
+  background-color:rgba(44, 62, 80,1.0);
+  color: #fff;
+}
+
+.logo {
+  max-width: 200px;
+  padding: 40px 0;
+  opacity: 0;
+}
+
+.headerTitle {
+  opacity: 0;
+}
+
+/* Utilities */
+
+.center {
+  margin: 0 auto;
+}
+
+.centerText {
+  text-align: center;
+}
+
+/* Animations  */
+.animate-fromLeft{
+  animation: fromLeft 2s ease-out 4.75s forwards;
+}
+
+.disappear {
+  animation: disappear 2s ease-out 2s forwards;
+}
+
+.appear {
+  animation: appear 2s ease-in 2.25s forwards;
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(25px);
+    opacity: .5;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1.0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
